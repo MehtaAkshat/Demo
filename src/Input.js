@@ -1,11 +1,11 @@
 import React from 'react';
 
 const Input = (props)  => {
-    const {name , type, lable} = props;
+    const {onChange, name, type, lable, placeholder} = props;
     return (
         <>
             {lable}
-            <input type={type} name={name} />
+            <input  onChange={onChange} type={type} name={name} placeholder={placeholder} />
         </>
     );
 };
